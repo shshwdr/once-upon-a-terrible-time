@@ -28,6 +28,8 @@ public class PlayerAimWeapon : MonoBehaviour {
     //private PlayerLookAt playerLookAt;
     private Transform aimTransform;
     private Transform aimGunEndPointTransform;
+
+    private Transform aimGunEndPointTransform2;
     private Transform aimShellPositionTransform;
     private Animator aimAnimator;
 
@@ -36,6 +38,8 @@ public class PlayerAimWeapon : MonoBehaviour {
         aimTransform = transform.Find("Aim");
         aimAnimator = aimTransform.GetComponent<Animator>();
         aimGunEndPointTransform = aimTransform.Find("GunEndPointPosition");
+
+        aimGunEndPointTransform2 = aimTransform.Find("GunEndPointPosition2");
         aimShellPositionTransform = aimTransform.Find("ShellPosition");
     }
 
@@ -72,7 +76,7 @@ public class PlayerAimWeapon : MonoBehaviour {
             aimAnimator.SetTrigger("Shoot");
 
             Vector3 aimDirection = (mousePosition - aimTransform.position).normalized;
-            RaycastHit2D raycastHit2D = Physics2D.Raycast(aimGunEndPointTransform.position, aimDirection);
+            RaycastHit2D raycastHit2D = Physics2D.Raycast(aimGunEndPointTransform2.position, aimDirection);
             if (raycastHit2D.collider != null)
             {
                 Enemy_simple enemy = raycastHit2D.collider.GetComponent<Enemy_simple>();

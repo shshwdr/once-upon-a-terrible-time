@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Zippy 2D/Zippy Lights 2D/Demo/Demo Scenes/ZL2D Demo Scene Depth
+      Example 1.unity
+    guid: 278e2ef99ef7b1b4b8fc457733e0b2fe
   m_configObjects: {}

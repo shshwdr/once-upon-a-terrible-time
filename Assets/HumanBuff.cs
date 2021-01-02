@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Utils : MonoBehaviour
+public class HumanBuff : MonoBehaviour
 {
-
-
-    public delegate void GameOverDele();
-    public static GameOverDele gameOverDele;
-
-    public delegate void GetBuff(HumanBuff.BuffType buffType);
-    public static GetBuff getBuff;
-
-    public static bool isGameOver;
+    public enum BuffType {Degree, ExtraLight, BackLight, Explode };
+    public BuffType buffType;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,4 +17,5 @@ public class Utils : MonoBehaviour
     {
         
     }
+
 }

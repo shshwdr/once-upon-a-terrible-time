@@ -28,6 +28,7 @@ public class UIAll : MonoBehaviour
 
     public void RestartButton()
     {
+        Utils.isGameOver = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //Application.LoadLevel(Application.loadedLevel); 
     }

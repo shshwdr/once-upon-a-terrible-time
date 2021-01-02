@@ -1,3 +1,5 @@
 
 light effect:
 https://assetstore.unity.com/packages/tools/sprite-management/zippy-lights-2d-59866
+shoot effect:
+https://www.youtube.com/watch?v=fuGQFdhSPg4
