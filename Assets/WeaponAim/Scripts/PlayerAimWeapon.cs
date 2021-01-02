@@ -44,6 +44,10 @@ public class PlayerAimWeapon : MonoBehaviour {
     }
 
     private void Update() {
+        if (Utils.Pause)
+        {
+            return;
+        }
         HandleAiming();
         HandleShooting();
     }

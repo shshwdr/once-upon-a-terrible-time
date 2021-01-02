@@ -33,7 +33,7 @@ public class LightAdjust : MonoBehaviour
         }
     }
 
-    void ChangeDegree(float degree)
+    public void ChangeDegree(float degree)
     {
         degree_light_depth.degrees += degree;
         degree_light_depth.degrees = Mathf.Min(degree_light_depth.degrees, 360);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Utils : MonoBehaviour
 {
 
-
+    public static bool Pause;
     public delegate void GameOverDele();
     public static GameOverDele gameOverDele;
 

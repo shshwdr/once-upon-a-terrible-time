@@ -1,5 +1,7 @@
 
-light effect:
+light effect & animals art:
 https://assetstore.unity.com/packages/tools/sprite-management/zippy-lights-2d-59866
-shoot effect:
+shoot effect & fire effect & gun art:
 https://www.youtube.com/watch?v=fuGQFdhSPg4
+dialog system:
+https://assetstore.unity.com/packages/tools/ai/dialogue-system-for-unity-11672

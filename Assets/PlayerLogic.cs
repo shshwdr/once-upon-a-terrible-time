@@ -17,6 +17,19 @@ public class PlayerLogic : MonoBehaviour
         
     }
 
+    public void pause()
+    {
+        Utils.Pause = !Utils.Pause;
+        if (Utils.Pause)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         print("on trigger enter " + collision);
@@ -33,7 +46,8 @@ public class PlayerLogic : MonoBehaviour
             //game end
             //Utils.gameOverDele();
             //Utils.isGameOver = true;
+            Destroy(collision.gameObject);
         }
-        Destroy(collision.gameObject);
+        //Destroy(collision.gameObject);
     }
 }
