@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class LightAdjust : MonoBehaviour
 {
     public ZippyLights2D degree_light_depth;
@@ -13,6 +13,7 @@ public class LightAdjust : MonoBehaviour
     void Start()
     {
         Utils.getBuff += BuffLight;
+        DOTween.Init();
     }
 
     // Update is called once per frame
@@ -35,12 +36,19 @@ public class LightAdjust : MonoBehaviour
 
     public void ChangeDegree(float degree)
     {
-        degree_light_depth.degrees += degree;
-        degree_light_depth.degrees = Mathf.Min(degree_light_depth.degrees, 360);
-        degree_light_simple.degrees += degree;
-        degree_light_depth.degrees = Mathf.Min(degree_light_simple.degrees, 360);
+        float origin_degree = degree_light_depth.degrees;
+        degree = Mathf.Min(origin_degree + degree, 360);
+        TweenLight(degree_light_depth, origin_degree, degree);
 
-        degree_light_shadow.degrees += degree;
-        degree_light_shadow.degrees = Mathf.Min(degree_light_shadow.degrees, 360);
+        TweenLight(degree_light_simple, origin_degree, degree);
+
+        TweenLight(degree_light_shadow, origin_degree, degree);
+
+    }
+
+    void TweenLight(ZippyLights2D light, float origin_degree,float degree)
+    {
+        DOTween.To(x => light.degrees = x, origin_degree, degree, 1).SetUpdate(true);
+
     }
 }

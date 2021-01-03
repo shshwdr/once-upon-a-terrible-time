@@ -25,4 +25,8 @@ public class Enemy_simple : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    public void pause()
+    {
+        
+    }
 }

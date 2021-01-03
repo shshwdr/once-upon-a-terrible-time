@@ -28,7 +28,7 @@ public class Wiggle : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update() {
-		if (Utils.isGameOver)
+		if (Utils.isGameOver || Utils.Pause)
 		{
 			return;
 		}
