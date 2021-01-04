@@ -1,0 +1,198 @@
+Database,Dialogue Database,,
+Author,,,
+Version,,,
+Description,,,
+,,,
+---Actors---,,,
+Name,Description,,
+Player,,,
+Hunter,,,
+Dwalf,,,
+The Second Dwarf,,,
+The Third Dwarf,,,
+Queen,,,
+,,,
+---Conversations---,,,
+,,,
+Conversation 1,Game Start,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Player_1_1,Player,,"Oh, dear huntsman, let me live. \nI will run into the wild woods and never come back."
+Hunter_1_2,Hunter,,"Run away, you poor child."
+Hunter_1_3,Hunter,,"Oh wait, take this gun and light."
+Hunter_1_4,Hunter,,Or the wild animals will soon devour you.
+,,,
+Conversation 2,Hunter Visit 1,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Hunter_2_1,Hunter,,"I'm surprised you are still alive, girl!"
+Player_2_2,Player,,"Thank you, your weapon and light helped a lot."
+Player_2_3,Player,,I'm so scared! Help me! Take me out of this place!
+Hunter_2_4,Hunter,,Yeah.. About this. I need to take some light back. I'm out of light myself so..
+Hunter_2_6,Hunter,,I can take you to the queen's castle if you want.
+Player_2_7,Player,,...Never mind then. By the way it is not her castle it's my castle!
+Hunter_2_8,Hunter,,Well I'm looking forward to that. But now I'm taking some light back...
+Player_2_9,Player,,You can't do this to me!
+Player_2_10,Player,,Ok.. It's your stuff after all
+Hunter_2_11,Hunter,,Yes I can. It's my stuff anyway.
+Player_2_12,Player,,Sorry Girl we all have our own life to take care.
+,,,
+Conversation 3,Kill Hunter,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Hunter_3_1,Hunter,,Girl! It's me! Why did you shoot on me..
+Player_3_2,Player,,! I didn't notice..
+Player_3_3,Player,,"(You killed a human, and the animals are geting more active now)"
+,,,
+Conversation 4,HunterVisit2,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Hunter_4_1,Hunter,,Still Alive?
+Player_4_2,Player,,You tell me!
+Hunter_4_3,Hunter,,"I'm glad you are alive, I REALLY AM, but.."
+Player_4_4,Player,,You want some light back again?
+Hunter_4_5,Hunter,,...Yeah. 
+Player_4_6,Player,,You want to kill me now?
+Hunter_4_7,Hunter,,"Sorry, the world outside is as hard as here. "
+Hunter_4_8,Hunter,,The reign under the queen is terrible.. Ah I already talked too much
+Hunter_4_9,Hunter,,Good luck girl.
+Hunter_4_10,Hunter,,What? No! I just want some of my light back!
+,,,
+Conversation 5,HunterVisit3,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Player_5_1,Player,,You again.
+Hunter_5_2,Hunter,,Yeah.. I'm glad..
+Player_5_3,Player,,Light?
+Player_5_4,Player,,My Life this time?
+Hunter_5_5,Hunter,,Sorry Girl. I have no choice. The queen promise to give me lots of money if I just kill you
+Player_5_6,Player,,(Shoot him)
+Player_5_7,Player,,Well. I'm not surprised. But still I want to thank you for what you have given me before.
+Hunter_5_8,Hunter,,..Aha..You are a quick learner.
+Hunter_5_9,Hunter,,"The queen will find you again soon and she will try to kill you. Take care, girl."
+Player_5_10,Player,,(The hunter died.)
+Hunter_5_11,Hunter,,"After all these things, you are still the same girl as I met you at the beginning."
+Hunter_5_12,Hunter,,This might be ridiculous. Do you want to run away with me? I will try my best to take care of you.
+Player_5_13,Player,,Yes. I'm done with this life.
+Player_5_14,Player,,"No, I'll fight entil the last of my day."
+Player_5_15,Player,,(You left with the hunter. But the whole country is under the queen's reign and suffered. You starve to death soon.)
+Hunter_5_16,Hunter,,"That's very brave. You have my bless. I'll try to leave this place. But take care, the queen will come to kill you soon."
+,,,
+Conversation 6,DwarfVisit1,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Dwalf_6_1,Dwalf,,Who has been shooting all those animals?
+Dwalf_6_2,Dwalf,,Oh good heaven! Oh good heaven! This Child is so beautiful! What's is your name?
+Player_6_3,Player,,...(What's wrong with this person) My name is Snow-White.
+Dwalf_6_4,Dwalf,,How did you find your way to this terrible place?
+Player_6_5,Player,,"Well, the queen tried to kill me, the huntsman had spared my life and this place is dangerous and devious so the queen can not find and kill me."
+Dwalf_6_6,Dwalf,,Oh I know you! The queen post a reward to anyone who kill you!
+Dwalf_6_7,Dwalf,,Oh of cause not! I'll not tell others you are here! You saved my life after all!
+Player_6_8,Player,,Are you going to report me?
+Player_6_9,Player,,Trust him and left him go
+Player_6_10,Player,,Don't trust him and kill him
+Dwalf_6_11,Dwalf,,Goodbye Snow White! Good luck to you!
+Dwalf_6_12,Dwalf,,No! Please! Ah!
+Player_6_13,Player,,(The dwarf is dead)
+,,,
+Conversation 7,Kill Dwarf,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Dwalf_7_1,Dwalf,,Who!
+Dwalf_7_2,Dwalf,,"Ah..Brothers, help me.."
+Player_7_3,Player,,"(You killed the dwarf, and the animals are more active now)"
+,,,
+Conversation 8,DwarfVisit2,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+The_Second_Dwarf_8_1,The Second Dwarf,,Hi young lady! Have you seen my brother? He looks exactly like me!
+Player_8_2,Player,,No. 
+Player_8_3,Player,,"Yes, he left that way."
+Player_8_4,Player,,"Yes, and I killed him... and you too!"
+The_Second_Dwarf_8_5,The Second Dwarf,,"Oh, sorry to bother you."
+The_Second_Dwarf_8_6,The Second Dwarf,,"Thanks! My brother is a money grubber, he said he will come here and search for someone the queen want to kill."
+The_Second_Dwarf_8_7,The Second Dwarf,,"I told him if the queen can't killed that person, he must be a real problem. But he still left."
+The_Second_Dwarf_8_8,The Second Dwarf,,I hope he is still alive.. Thanks anyway!
+Dwalf_8_9,Dwalf,,No!
+Player_8_10,Player,,(You killed the second dwarf. Will there be more of them? You are curious.)
+,,,
+Conversation 9,Dwarf Visit 3,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+The_Third_Dwarf_9_1,The Third Dwarf,,"Hi young lady, have you seen my bothers? They look just like me!"
+Player_9_2,Player,,Again? 
+Player_9_3,Player,,Yeah and you will see them soon!
+The_Third_Dwarf_9_4,The Third Dwarf,,"Aha.. I know my brothers they are really troubles, running around in this terrible time. If you have seen them, do you mind to leave with me and go find them?"
+Player_9_6,Player,,Ok
+Player_9_7,Player,,"No way, I'm strying here."
+The_Third_Dwarf_9_8,The Third Dwarf,,No!
+Player_9_9,Player,,(You killed the third dwarf and feel peaceful)
+The_Third_Dwarf_9_10,The Third Dwarf,,Ok. I'll find them alone then. Take care child!
+The_Third_Dwarf_9_11,The Third Dwarf,,It's not up to you! I knew you killed my brothers you monster!
+Player_9_12,Player,,(You have no choice but killed him too. YOU HAVE NO CHOICE.)
+Player_9_13,Player,,(You followed him. He reported you to the queen one night and you got killed by the queen)
+,,,
+Conversation 10,test,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Hunter_10_1,Hunter,,test
+Player_10_2,Player,,test1
+Player_10_3,Player,,test2
+Hunter_10_4,Hunter,,t1
+Hunter_10_5,Hunter,,t2\n
+,,,
+Conversation 11,QueenVisit1,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Queen_11_1,Queen,,"Apples, apples, buy some apples. They are dilicious!"
+Queen_11_2,Queen,,"Young lady, do you want some apples?"
+Player_11_3,Player,,No.
+Player_11_4,Player,,Let's skip the talk. Queen.
+Queen_11_5,Queen,,Then do you want some combs? Or lace?
+Queen_11_6,Queen,,
+Player_11_7,Player,,Just leave me along!
+Player_11_8,Player,,They look good! I'll take some!
+Player_11_9,Player,,(You took an apple and died.)
+Queen_11_10,Queen,,Ok ok.. What a irritable child!
+Queen_11_11,Queen,,How would you.. Ah!
+Player_11_12,Player,,(You killed the queen and get back to your home)
+Player_11_13,Player,,(You are happy.)
+Player_11_14,Player,,(You are terrified)
+Player_11_15,Player,,(Now you are the Queen of the Country. And the most beautiful woman in the world)
+Player_11_16,Player,,"(Until one day, your mirror told you, there is a girl thousand times fairer than you)"
+Player_11_17,Player,,(The End)
+Player_11_18,Player,,(For everyone you killed during this time. Their ghost haunted you every night.)
+Player_11_19,Player,,"(You killed more and more people, because you think they are revenging for others. You got crazy.)"
+Player_11_20,Player,,
+,,,
+Conversation 12,Killed Queen,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Queen_12_20,Queen,,How would you.. Ah!
+Player_12_21,Player,,(You killed the queen and get back to your home)
+Player_12_22,Player,,(You are happy.)
+Player_12_23,Player,,(You are terrified)
+Player_12_24,Player,,(Now you are the Queen of the Country. And the most beautiful woman in the world)
+Player_12_25,Player,,"(Until one day, your mirror told you, there is a girl thousand times fairer than you)"
+Player_12_26,Player,,(The End)
+Player_12_27,Player,,(For everyone you killed during this time. Their ghost haunted you every night.)
+Player_12_28,Player,,"(You killed more and more people, because you think they are revenging for others. You got crazy.)"
+,,,
+Conversation 13,KilledByAnimals,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Player_13_1,Player,,(You are killed by animals.)
+,,,
+Conversation 14,Kill Dwarf2,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Dwalf_14_1,Dwalf,,Who!
+Dwalf_14_2,Dwalf,,"Ah..Brothers, help me.."
+Player_14_3,Player,,"(You killed the second dwarf, and the animals are more active now)"
+,,,
+Conversation 15,Kill Dwarf3,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+Dwalf_15_1,Dwalf,,Who!
+Dwalf_15_2,Dwalf,,"Ah..Brothers, help me.."
+Player_15_3,Player,,"(You killed the third dwarf, and the animals are more active now)"
