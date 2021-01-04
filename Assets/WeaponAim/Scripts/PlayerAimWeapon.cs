@@ -87,6 +87,8 @@ public class PlayerAimWeapon : MonoBehaviour {
                 if (enemy)
                 {
                     enemy.Damage(100);
+
+                    Utils.MonsterKilled += 1;
                 }
             }
 

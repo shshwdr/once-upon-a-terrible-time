@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 public class LightAdjust : MonoBehaviour
 {
+    public float startDegree = 180;
     public ZippyLights2D degree_light_depth;
     public ZippyLights2D degree_light_simple;
 
@@ -14,6 +15,9 @@ public class LightAdjust : MonoBehaviour
     {
         Utils.getBuff += BuffLight;
         DOTween.Init();
+        SetLight(degree_light_depth, startDegree);
+        SetLight(degree_light_simple, startDegree);
+        SetLight(degree_light_shadow, startDegree);
     }
 
     // Update is called once per frame
@@ -50,5 +54,15 @@ public class LightAdjust : MonoBehaviour
     {
         DOTween.To(x => light.degrees = x, origin_degree, degree, 1).SetUpdate(true);
 
+    }
+
+    void SetLight(ZippyLights2D light,  float degree)
+    {
+        light.degrees = degree;
+    }
+
+    public void HumanDie()
+    {
+        Utils.HumanKilled += 1;
     }
 }

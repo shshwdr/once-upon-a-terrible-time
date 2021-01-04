@@ -24,11 +24,14 @@ public class UIAll : MonoBehaviour
     {
         Debug.Log("game over");
         Restart.SetActive(true);
+        Time.timeScale = 0;
+        Utils.isGameOver = true;
     }
 
     public void RestartButton()
     {
         Utils.isGameOver = false;
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         //Application.LoadLevel(Application.loadedLevel); 
     }

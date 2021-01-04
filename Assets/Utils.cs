@@ -6,6 +6,9 @@ public class Utils : MonoBehaviour
 {
 
     public static bool Pause;
+    public static int MonsterKilled;
+
+    public static int HumanKilled;
     public delegate void GameOverDele();
     public static GameOverDele gameOverDele;
 

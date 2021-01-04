@@ -30,24 +30,24 @@ public class PlayerLogic : MonoBehaviour
         }
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    print("on trigger enter " + collision);
-    //    //friend
-    //    if (collision.gameObject.layer == 14)
-    //    {
-    //        //get buff type
-    //        HumanBuff.BuffType bufftype = collision.GetComponent<HumanBuff>().buffType;
-    //        Utils.getBuff(bufftype);
-    //    }
-    //    //enemy
-    //    else if(collision.gameObject.layer == 12)
-    //    {
-    //        //game end
-    //        //Utils.gameOverDele();
-    //        //Utils.isGameOver = true;
-    //        Destroy(collision.gameObject);
-    //    }
-    //    //Destroy(collision.gameObject);
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("on trigger enter " + collision);
+        //friend
+        if (collision.gameObject.layer == 14)
+        {
+            //get buff type
+           // HumanBuff.BuffType bufftype = collision.GetComponent<HumanBuff>().buffType;
+            //Utils.getBuff(bufftype);
+        }
+        //enemy
+        else if (collision.gameObject.layer == 12)
+        {
+            //game end
+            //Utils.gameOverDele();
+            //Utils.isGameOver = true;
+            Destroy(collision.gameObject);
+        }
+        //Destroy(collision.gameObject);
+    }
 }

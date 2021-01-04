@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2283072846225862610
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213592, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2607963236185213593, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 224163d649050de42a2794e7da788d42,
+        type: 3}
+    - target: {fileID: 2607963236185213599, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: m_Name
+      value: Queen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830998572693383794, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: conversation
+      value: Killed Queen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3830998572693383794, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["finishQueenVisit1"] == false
+      objectReference: {fileID: 0}
+    - target: {fileID: 6011055660475298359, guid: e6b49565f13385f4ca9664e2c217255e,
+        type: 3}
+      propertyPath: conversation
+      value: QueenVisit1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e6b49565f13385f4ca9664e2c217255e, type: 3}

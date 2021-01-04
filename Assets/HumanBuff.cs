@@ -5,6 +5,7 @@ using UnityEngine;
 public class HumanBuff : MonoBehaviour
 {
     public enum BuffType {Degree, ExtraLight, BackLight, Explode };
+    public string humanName;
     public BuffType buffType;
     // Start is called before the first frame update
     void Start()
