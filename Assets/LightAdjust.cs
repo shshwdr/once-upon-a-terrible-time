@@ -61,8 +61,4 @@ public class LightAdjust : MonoBehaviour
         light.degrees = degree;
     }
 
-    public void HumanDie()
-    {
-        Utils.HumanKilled += 1;
-    }
 }

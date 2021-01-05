@@ -17,7 +17,7 @@ using UnityEngine;
 using CodeMonkey.Utils;
 
 public class PlayerAimWeapon : MonoBehaviour {
-
+    public AudioClip shootClip;
     public event EventHandler<OnShootEventArgs> OnShoot;
     public class OnShootEventArgs : EventArgs {
         public Vector3 gunEndPointPosition;
@@ -78,6 +78,7 @@ public class PlayerAimWeapon : MonoBehaviour {
             Vector3 mousePosition = UtilsClass.GetMouseWorldPosition();
 
             aimAnimator.SetTrigger("Shoot");
+            GetComponents<AudioSource>()[0].PlayOneShot(shootClip);
 
             Vector3 aimDirection = (mousePosition - aimTransform.position).normalized;
             RaycastHit2D raycastHit2D = Physics2D.Raycast(aimGunEndPointTransform2.position, aimDirection);
@@ -87,6 +88,14 @@ public class PlayerAimWeapon : MonoBehaviour {
                 if (enemy)
                 {
                     enemy.Damage(100);
+
+
+
+                    if (enemy.GetComponent<AudioSource>())
+                    {
+
+                        GetComponents<AudioSource>()[1].PlayOneShot(enemy.GetComponent<AudioSource>().clip);
+                    }
 
                     Utils.MonsterKilled += 1;
                 }

@@ -15,19 +15,17 @@ public class DialogUtils : MonoBehaviour
     {
         
     }
+
     public void pause()
     {
-        
-    }
-    void OnDisable()
-    {
-        Debug.Log("PrintOnDisable: script was disabled");
-        pause();
-    }
-
-    void OnEnable()
-    {
-        Debug.Log("PrintOnEnable: script was enabled");
-        pause();
+        Utils.Pause = !Utils.Pause;
+        if (Utils.Pause)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
     }
 }

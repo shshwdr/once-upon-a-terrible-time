@@ -857,7 +857,8 @@ namespace PixelCrushers.DialogueSystem
             }
             if (isConversationActive && !allowSimultaneousConversations)
             {
-                if (DialogueDebug.logWarnings) Debug.LogWarning(string.Format("{0}: Another conversation is already active. Not starting '{1}'.", new System.Object[] { DialogueDebug.Prefix, title }));
+                StopConversation();
+               // if (DialogueDebug.logWarnings) Debug.LogWarning(string.Format("{0}: Another conversation is already active. Not starting '{1}'.", new System.Object[] { DialogueDebug.Prefix, title }));
             }
             else if (dialogueUI == null)
             {

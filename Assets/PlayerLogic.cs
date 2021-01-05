@@ -46,6 +46,8 @@ public class PlayerLogic : MonoBehaviour
             //game end
             //Utils.gameOverDele();
             //Utils.isGameOver = true;
+
+            GetComponent<AudioSource>().Play();
             Destroy(collision.gameObject);
         }
         //Destroy(collision.gameObject);

@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using PixelCrushers.DialogueSystem;
 
 public class UIAll : MonoBehaviour
 {
-    GameObject Restart;
+    public GameObject Restart;
     // Start is called before the first frame update
     void Start()
     {
-        Restart = GetComponentInChildren<Transform>(true).gameObject;
         Restart.SetActive(false);
         print(Restart + " restart");
         Utils.gameOverDele += GameOver;
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
@@ -20,6 +21,13 @@ public class UIAll : MonoBehaviour
     {
         
     }
+
+
+    public void HumanDie()
+    {
+        Utils.HumanKilled += 1;
+    }
+
     public void GameOver()
     {
         Debug.Log("game over");
@@ -28,11 +36,28 @@ public class UIAll : MonoBehaviour
         Utils.isGameOver = true;
     }
 
-    public void RestartButton()
+     public void RestartButton()
     {
-        Utils.isGameOver = false;
-        Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        Restart.SetActive(false);
+        DialogueManager.StopConversation();
+        Utils.MonsterKilled = 0;
+        Utils.HumanKilled = 0;
+        StartCoroutine(test());
         //Application.LoadLevel(Application.loadedLevel); 
     }
+
+    public IEnumerator test()
+    {
+
+        yield return new WaitForSeconds(0.3f);
+
+        DialogueManager.ResetDatabase();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+        Utils.isGameOver = false;
+        Time.timeScale = 1;
+    }
+
+
 }

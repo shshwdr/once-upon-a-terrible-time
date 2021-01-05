@@ -62,10 +62,9 @@ public class EnemySpawner : MonoBehaviour
 
         string humanName = humans[currentHuman].GetComponent<HumanBuff>().humanName;
         bool isDead = DialogueLua.GetVariable(humanName+"Dead").AsBool;
-        
         if (isDead)
         {
-            Debug.Log("well this man has dead already");
+            Debug.Log("well "+ humanName+" has dead already");
             return;
         }
         //int randomNum = Random.Range(0, totalNumberOfItemsInAvailableCars);
