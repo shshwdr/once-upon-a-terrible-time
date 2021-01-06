@@ -7,6 +7,7 @@ public class BMG : MonoBehaviour
 
     public AudioClip BGM;
     public AudioClip spook;
+    public AudioClip playWithMe;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class BMG : MonoBehaviour
     private void Awake()
     {
 
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
     public void playBMG()
     {
@@ -38,6 +39,13 @@ public class BMG : MonoBehaviour
     {
 
         GetComponent<AudioSource>().clip = spook;
+        GetComponent<AudioSource>().Play();
+    }
+
+    public void playPlayWithMe()
+    {
+
+        GetComponent<AudioSource>().clip = playWithMe;
         GetComponent<AudioSource>().Play();
     }
 }

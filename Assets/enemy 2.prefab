@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 0.35
-  toward_distance: 0.2
+  toward_distance: 0.14
   speed: 0.01
 --- !u!60 &8600423902594406336
 PolygonCollider2D:

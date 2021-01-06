@@ -8,6 +8,8 @@ public class Utils : MonoBehaviour
     public static bool Pause;
     public static int MonsterKilled=0;
 
+    public static int MonsterKilledTotal = 0;
+
     public static int HumanKilled=0;
     public delegate void GameOverDele();
     public static GameOverDele gameOverDele;

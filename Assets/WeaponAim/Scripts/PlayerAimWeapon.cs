@@ -98,6 +98,7 @@ public class PlayerAimWeapon : MonoBehaviour {
                     }
 
                     Utils.MonsterKilled += 1;
+                    Utils.MonsterKilledTotal += 1;
                 }
             }
 

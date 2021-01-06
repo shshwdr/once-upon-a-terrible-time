@@ -42,6 +42,7 @@ public class UIAll : MonoBehaviour
         Restart.SetActive(false);
         DialogueManager.StopConversation();
         Utils.MonsterKilled = 0;
+        Utils.MonsterKilledTotal = 0;
         Utils.HumanKilled = 0;
         StartCoroutine(test());
         //Application.LoadLevel(Application.loadedLevel); 

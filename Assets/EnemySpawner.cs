@@ -32,14 +32,26 @@ public class EnemySpawner : MonoBehaviour
         //Object objTemp = Resources.Load("cars/" + randomNum);
         float angle = Random.Range(0f, 1f) * Mathf.PI*2f;
         Vector3 newPos = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 1);
-        GameObject enemy = enemyList[Random.Range(0, 2)];
+        int currentLvelupIndex = 0;
+        if (Utils.MonsterKilledTotal >= 5)
+        {
+            currentLvelupIndex = 1;
+        }
+
+        if (Utils.MonsterKilledTotal >= 15)
+        {
+            currentLvelupIndex = 2;
+        }
+        Debug.Log(Utils.MonsterKilled +" current currentLvelupIndex " + currentLvelupIndex);
+        GameObject enemy = enemyList[Random.Range(0, currentLvelupIndex + 1)];
+       
         Instantiate(enemy,newPos,Quaternion.identity);
         // Start a new timer for the next random spawn
         if (Utils.isGameOver)
         {
             return;
         }
-        Invoke("SpawnEnemy", Random.Range(time_min, time_max));
+        Invoke("SpawnEnemy", Random.Range(time_min, time_max) / (1+Utils.HumanKilled*0.5f));
     }
 
     private void Update()
