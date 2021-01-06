@@ -21,6 +21,9 @@ Player_1_1,Player,,"Oh, dear huntsman, let me live. \nI will run into the wild w
 Hunter_1_2,Hunter,,"Run away, you poor child."
 Hunter_1_3,Hunter,,"Oh wait, take this gun and light."
 Hunter_1_4,Hunter,,Or the wild animals will soon devour you.
+Player_1_5,Player,,(The huntsman obeyed the queen and took you into the woods)
+Player_1_6,Player,,Thanks!
+Hunter_1_7,Hunter,,"I might visit you later child, don't hit me then."
 
 Conversation 2,Hunter Visit 1
 Description,
@@ -35,7 +38,8 @@ Hunter_2_8,Hunter,,"Well, I'm looking forward to that. But now I'm taking some l
 Player_2_9,Player,,You can't do this to me!
 Player_2_10,Player,,Ok... It's your stuff after all
 Hunter_2_11,Hunter,,Yes I can. It's my stuff anyway.
-Player_2_12,Player,,Sorry Girl we all have our own life to take care of.
+Hunter_2_12,Hunter,,Sorry Girl we all have our own life to take care of.
+Player_2_13,Player,,What.. No... Ok... It's your stuff after all...
 
 Conversation 3,Kill Hunter
 Description,
@@ -55,8 +59,11 @@ Hunter_4_5,Hunter,,...Yeah.
 Player_4_6,Player,,Do you want to kill me now?
 Hunter_4_7,Hunter,,"Sorry, the world outside is as hard as here. "
 Hunter_4_8,Hunter,,The reign under the queen is terrible... Ah I already talked too much
-Hunter_4_9,Hunter,,Good luck girl.
-Hunter_4_10,Hunter,,What? No! I just want some of my light back!
+Hunter_4_9,Hunter,,"It's not that simple, child."
+Hunter_4_10,Hunter,,No! (Murmur)Not directly..
+Player_4_11,Player,,You can take me back and I can replace the queen!
+Player_4_12,Player,,Why did you not fight back the qeeun?
+Hunter_4_13,Hunter,,"Ha ha, you are so cute."
 
 Conversation 5,HunterVisit3
 Description,
@@ -65,13 +72,13 @@ Player_5_1,Player,,You again.
 Hunter_5_2,Hunter,,Yeah... I'm glad...
 Player_5_3,Player,,Light?
 Player_5_4,Player,,My Life this time?
-Hunter_5_5,Hunter,,Sorry Girl. I have no choice. The queen promise to give me lots of money if I just kill you
+Hunter_5_5,Hunter,,Sorry Girl. I have no choice. The queen promise to give me lots of money if I just kill you.
 Player_5_6,Player,,(Shoot him)
 Player_5_7,Player,,"Well. I'm not surprised. But still, I want to thank you for what you have given me before."
 Hunter_5_8,Hunter,,..Aha...You are a quick learner.
 Hunter_5_9,Hunter,,"The queen will find you again soon and she will try to kill you. Take care, girl."
 Player_5_10,Player,,(The hunter died.)
-Hunter_5_11,Hunter,,"After all these things, you are still the same girl as I met you at the beginning."
+Hunter_5_11,Hunter,,"After all these things you met, you are still the same girl as I met you at the beginning."
 Hunter_5_12,Hunter,,This might be ridiculous. Do you want to run away with me? I will try my best to take care of you.
 Player_5_13,Player,,Yes. I'm done with this life.
 Player_5_14,Player,,"No, I'll fight until the last of my day."
@@ -91,7 +98,7 @@ Dwalf_6_7,Dwalf,,Oh of cause not! I'll not tell others you are here! You saved m
 Player_6_8,Player,,Are you going to report me?
 Player_6_9,Player,,Trust him and left him to go
 Player_6_10,Player,,Don't trust him and kill him
-Dwalf_6_11,Dwalf,,Goodbye Snow White! Good luck to you!
+Dwalf_6_11,Dwalf,,"Goodbye Snow White! Be careful with anyone close to you, they might report you... The queen promised A TON of money!"
 Dwalf_6_12,Dwalf,,No! Please! Ah!
 Player_6_13,Player,,(The dwarf is dead)
 
@@ -130,7 +137,8 @@ Player_9_9,Player,,(You killed the third dwarf and feel peaceful)
 The_Third_Dwarf_9_10,The Third Dwarf,,Ok. I'll find them alone then. Take care child!
 The_Third_Dwarf_9_11,The Third Dwarf,,It's not up to you! I knew you killed my brothers you monster!
 Player_9_12,Player,,(You have no choice but to kill him too. YOU HAVE NO CHOICE.)
-Player_9_13,Player,,(You followed him. He reported you to the queen one night and you got killed by the queen)
+invalid_entrytag,ActorNotFound,,(You followed him. He reported you to the queen one night and you got killed by the queen)
+invalid_entrytag,ActorNotFound,,"(You followed him and found his brothers. You will keep house for them, and cook, make beds, wash, sew, and knit, and keep everything clean and orderly. Until one day They are out of money and reported you.)"
 
 Conversation 11,QueenVisit1
 Description,
@@ -154,7 +162,7 @@ Player_11_16,Player,,"(Until one day, your mirror told you, there is a girl thou
 Player_11_17,Player,,(The End)
 Player_11_18,Player,,(For every one you killed during this time. Their ghost haunted you every night.)
 Player_11_19,Player,,(You killed more and more people because you think they are revenging for others. You got crazy.)
-Player_11_20,Player,,
+Player_11_20,Player,,(You stayed in the forest until one day got killed by monsters)
 
 Conversation 12,Killed Queen
 Description,
@@ -168,6 +176,7 @@ Player_12_25,Player,,"(Until one day, your mirror told you, there is a girl thou
 Player_12_26,Player,,(The End)
 Player_12_27,Player,,(For every one you killed during this time. Their ghost haunted you every night.)
 Player_12_28,Player,,(You killed more and more people because you think they are revenging for others. You got crazy.)
+Queen_12_29,Queen,,
 
 Conversation 13,KilledByAnimals
 Description,
@@ -177,13 +186,13 @@ Player_13_1,Player,,(You are killed by animals.)
 Conversation 14,Kill Dwarf2
 Description,
 entrytag,Actor,Description,Dialogue Text
-Dwalf_14_1,Dwalf,,Who!
-Dwalf_14_2,Dwalf,,"Ah..Brothers, help me.."
+The_Second_Dwarf_14_1,The Second Dwarf,,Who!
+The_Second_Dwarf_14_2,The Second Dwarf,,"Ah..Brothers, help me.."
 Player_14_3,Player,,"(You killed the second dwarf, and the animals are more active now)"
 
 Conversation 15,Kill Dwarf3
 Description,
 entrytag,Actor,Description,Dialogue Text
-Dwalf_15_1,Dwalf,,Who!
-Dwalf_15_2,Dwalf,,"Ah..Brothers, help me.."
+The_Third_Dwarf_15_1,The Third Dwarf,,Who!
+The_Third_Dwarf_15_2,The Third Dwarf,,"Ah..Brothers, help me.."
 Player_15_3,Player,,"(You killed the third dwarf, and the animals are more active now)"

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Enemy_simple : MonoBehaviour
 {
-    int health = 1;
+    public  int health = 1;
     bool isDead = false;
+    public Sprite angrySprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,10 @@ public class Enemy_simple : MonoBehaviour
         {
             isDead = true;
             die();
+        }
+        else if (angrySprite)
+        {
+            GetComponent<SpriteRenderer>().sprite = angrySprite;
         }
     }
 

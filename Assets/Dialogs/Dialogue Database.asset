@@ -441,9 +441,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: '
-
-'
+        value: 
         type: 0
         typeString: 
       - title: Pictures
@@ -1990,8 +1988,8 @@ MonoBehaviour:
         y: 281.52316
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 232.65292}
-    canvasZoom: 0.49000028
+    canvasScrollPosition: {x: 38.515724, y: 240.22247}
+    canvasZoom: 0.55000025
   - id: 3
     fields:
     - title: Title

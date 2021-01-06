@@ -5,7 +5,7 @@ using PixelCrushers.DialogueSystem;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public List<GameObject> enemyList;
     public float time_min;
     public float time_max;
     public float radius = 2;
@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
         //Object objTemp = Resources.Load("cars/" + randomNum);
         float angle = Random.Range(0f, 1f) * Mathf.PI*2f;
         Vector3 newPos = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 1);
-
+        GameObject enemy = enemyList[Random.Range(0, 2)];
         Instantiate(enemy,newPos,Quaternion.identity);
         // Start a new timer for the next random spawn
         if (Utils.isGameOver)

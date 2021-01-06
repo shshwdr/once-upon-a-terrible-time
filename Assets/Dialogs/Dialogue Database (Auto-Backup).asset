@@ -998,8 +998,8 @@ MonoBehaviour:
         y: 507.19696
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1.369873, y: 194.80745}
-    canvasZoom: 0.7300002
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.6100003
   - id: 2
     fields:
     - title: Title
@@ -1990,8 +1990,8 @@ MonoBehaviour:
         y: 281.52316
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 157.08629}
-    canvasZoom: 0.7300001
+    canvasScrollPosition: {x: 0, y: 232.65292}
+    canvasZoom: 0.49000028
   - id: 3
     fields:
     - title: Title
@@ -3103,7 +3103,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Menu Text
@@ -3111,7 +3111,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: No!(mur
+        value: No! (Murmur)Not directly..
         type: 0
         typeString: 
       - title: Sequence
@@ -3376,7 +3376,7 @@ MonoBehaviour:
         y: 507.58612
         width: 160
         height: 30
-    canvasScrollPosition: {x: 39.560555, y: 112.77222}
+    canvasScrollPosition: {x: 0, y: 131.95029}
     canvasZoom: 0.7300002
   - id: 5
     fields:
@@ -7340,6 +7340,12 @@ MonoBehaviour:
         destinationDialogueID: 13
         isConnector: 0
         priority: 2
+      - originConversationID: 9
+        originDialogueID: 6
+        destinationConversationID: 9
+        destinationDialogueID: 14
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7424,8 +7430,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 239.9222
-        y: 287.6562
+        x: 323.43866
+        y: 299.74408
         width: 160
         height: 30
     - id: 8
@@ -7627,8 +7633,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 217.5538
-        y: 385.0246
+        x: 356.01535
+        y: 389.4202
         width: 160
         height: 30
     - id: 11
@@ -7699,8 +7705,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 430.7116
-        y: 385.0245
+        x: 565.8764
+        y: 382.8267
         width: 160
         height: 30
     - id: 12
@@ -7766,18 +7772,18 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 441.6706
-        y: 441.8738
+        x: 624.0882
+        y: 438.57706
         width: 160
         height: 30
     - id: 13
       fields:
       - title: Actor
-        value: 1
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Title
@@ -7829,6 +7835,74 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
+      conditionsString: (Variable["Dwarf1Dead"] == true) or (Variable["Dwarf2Dead"]
+        == true)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 6.3335876
+        y: 409.53156
+        width: 160
+        height: 30
+    - id: 14
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: (You followed him and found his brothers. You will keep house for
+          them, and cook, make beds, wash, sew, and knit, and keep everything clean
+          and orderly. Until one day They are out of money and reported you.)
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 9
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -7836,11 +7910,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 21.7182
-        y: 341.3997
+        x: 184.35556
+        y: 407.33377
         width: 160
         height: 30
-    canvasScrollPosition: {x: 85.714386, y: 243.95601}
+    canvasScrollPosition: {x: 0, y: 108.79118}
     canvasZoom: 0.9100001
   - id: 11
     fields:
@@ -8962,7 +9036,8 @@ MonoBehaviour:
         destinationDialogueID: 18
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: (Variable["HunterDead"] == true) and (Variable["Dwarf3Dead"]
+        == true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9339,7 +9414,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Title
-        value: New Dialogue Entry
+        value: 
         type: 0
         typeString: 
       - title: Menu Text
@@ -9347,7 +9422,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 
+        value: (You stayed in the forest until one day got killed by monsters)
         type: 0
         typeString: 
       - title: Sequence
@@ -9397,8 +9472,8 @@ MonoBehaviour:
         y: 380
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 133.52023}
-    canvasZoom: 0.85000014
+    canvasScrollPosition: {x: 0, y: 17.699677}
+    canvasZoom: 0.7900002
   - id: 12
     fields:
     - title: Title
@@ -10768,7 +10843,7 @@ MonoBehaviour:
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.9100001
   - id: 15
     fields:
     - title: Title
