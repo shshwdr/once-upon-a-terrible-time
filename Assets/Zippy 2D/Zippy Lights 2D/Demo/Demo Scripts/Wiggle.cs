@@ -30,7 +30,7 @@ public class Wiggle : MonoBehaviour {
 	float getSpeed()
     {
 		float newSpeed = speed * (1 + Utils.HumanKilled);
-		Debug.Log(Utils.HumanKilled +"wiggle speed " +newSpeed);
+		//Debug.Log(Utils.HumanKilled +"wiggle speed " +newSpeed);
 		return speed;
     }
 	// Update is called once per frame

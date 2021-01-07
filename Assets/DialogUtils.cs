@@ -28,4 +28,10 @@ public class DialogUtils : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    public void playBGM()
+    {
+        GameObject.Find("BGM").GetComponentInChildren<BMG>().playBMG();
+       // gameObject.transform.parent.GetComponentInChildren<BMG>().playBMG();
+    }
 }

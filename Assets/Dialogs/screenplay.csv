@@ -1,0 +1,599 @@
+﻿[1]	GAME START
+
+				PLAYER
+		(The huntsman obeyed the queen and took you into the woods)
+
+				PLAYER
+		Oh, dear huntsman, let me live. 
+I will run into the wild woods and never come back.
+
+				HUNTER
+		Run away, you poor child.
+
+				HUNTER
+		Oh wait, take this gun and light.
+
+				HUNTER
+		Or the wild animals will soon devour you.
+
+				PLAYER
+		Thanks!
+
+				HUNTER
+		I might visit you later child, don't hit me then.
+
+				[END]
+
+
+---page---
+
+[2]	HUNTER VISIT 1
+
+				HUNTER
+		I'm surprised you are still alive, girl!
+
+	Responses: [2], [3]
+
+				PLAYER
+		Thank you, your weapon and light helped a lot.
+
+				HUNTER
+		Yeah... About this. I need to take some light back. I'm out of light myself so...
+
+				PLAYER
+		What.. No... Ok... It's your stuff after all...
+
+	Entry [12]:
+
+				HUNTER
+		Sorry Girl we all have our own life to take care of.
+
+				[END]
+
+	Entry [3]:
+
+				PLAYER
+		I'm so scared! Help me! Take me out of this place!
+
+				HUNTER
+		I can take you to the queen's castle if you want.
+
+				PLAYER
+		...Never mind then. By the way, it is not her castle it's my castle!
+
+				HUNTER
+		Well, I'm looking forward to that. But now I'm taking some light back...
+
+	Responses: [9], [10]
+
+				PLAYER
+		You can't do this to me!
+
+				HUNTER
+		Yes I can. It's my stuff anyway.
+
+	Entry [10]:
+
+				PLAYER
+		Ok... It's your stuff after all
+
+
+---page---
+
+[3]	KILL HUNTER
+
+				HUNTER
+		Girl! It's me! Why did you shoot on me...
+
+	Responses: [2], [4]
+
+				PLAYER
+		! I didn't notice...
+
+	Entry [3]:
+
+				PLAYER
+		(You killed a human, and the animals are getting more active now)
+
+				[END]
+
+	Entry [4]:
+
+				PLAYER
+		One shall stand, one shall fall.
+
+
+---page---
+
+[4]	HUNTERVISIT2
+
+				HUNTER
+		Still Alive?
+
+				PLAYER
+		You tell me!
+
+				HUNTER
+		I'm glad you are alive, I REALLY AM, but...
+
+	Responses: [4], [6]
+
+				PLAYER
+		You want some light back again?
+
+				HUNTER
+		...Yeah. 
+
+	Entry [7]:
+
+				HUNTER
+		Sorry, the world outside is as hard as here. 
+
+				HUNTER
+		The reign under the queen is terrible... Ah I already talked too much
+
+	Responses: [11], [12]
+
+				PLAYER
+		You can take me back and I can replace the queen!
+
+				HUNTER
+		Ha ha, you are so cute.
+
+	Entry [9]:
+
+				HUNTER
+		It's not that simple, child.
+
+				[END]
+
+	Entry [12]:
+
+				PLAYER
+		Why did you not fight back the qeeun?
+
+	Entry [6]:
+
+				PLAYER
+		Do you want to kill me now?
+
+				HUNTER
+		No! (Murmur) Not directly..
+
+
+---page---
+
+[5]	HUNTERVISIT3
+
+				PLAYER
+		You again.
+
+				HUNTER
+		Yeah... I'm glad...
+
+	Responses: [3], [4]
+
+				PLAYER
+		Light?
+
+	Entry [5]:
+
+				HUNTER
+		Sorry Girl. I have no choice. The queen promise to give me lots of money if I just kill you.
+
+	Responses: [6], [7]
+
+				PLAYER
+		(Shoot him)
+
+				HUNTER
+		..Aha...You are a quick learner.
+
+				HUNTER
+		The queen will find you again soon and she will try to kill you. Take care, girl.
+
+				PLAYER
+		(The hunter died.)
+
+				[END]
+
+	Entry [7]:
+
+				PLAYER
+		Well. I'm not surprised. But still, I want to thank you for what you have given me before.
+
+				HUNTER
+		After all these things you met, you are still the same girl as I met you at the beginning.
+
+				HUNTER
+		This might be ridiculous. Do you want to run away with me? I will try my best to take care of you.
+
+	Responses: [13], [14]
+
+				PLAYER
+		Yes. I'm done with this life.
+
+				PLAYER
+		(You left with the hunter. But the whole country is under the queen's reign and suffered. You starve to death soon.)
+
+				[END]
+
+	Entry [14]:
+
+				PLAYER
+		No, I'll fight until the last of my day.
+
+				HUNTER
+		That's very brave. You have my blessing. I'll try to leave this place. But take care, the queen will come to kill you soon.
+
+				[END]
+
+	Entry [4]:
+
+				PLAYER
+		My Life this time?
+
+
+---page---
+
+[6]	DWARFVISIT1
+
+				DWALF
+		Who has been shooting all those animals?
+
+				DWALF
+		Oh good heaven! Oh good heaven! This Child is so beautiful! What's is your name?
+
+				PLAYER
+		...(What's wrong with this person) My name is Snow-White.
+
+				DWALF
+		How did you find your way to this terrible place?
+
+				PLAYER
+		Well, the queen tried to kill me, the huntsman had spared my life and this place is dangerous and devious so the queen can not find and kill me.
+
+				DWALF
+		Oh I know you! The queen posted a reward to anyone who kills you!
+
+				PLAYER
+		Are you going to report me?
+
+				DWALF
+		Oh of cause not! I'll not tell others you are here! You saved my life after all!
+
+	Responses: [9], [10]
+
+				PLAYER
+		Trust him and left him to go
+
+				DWALF
+		Goodbye Snow White! Be careful with anyone close to you, they might report you... The queen promised A TON of money!
+
+				[END]
+
+	Entry [10]:
+
+				PLAYER
+		Don't trust him and kill him
+
+				DWALF
+		No! Please! Ah!
+
+				PLAYER
+		(The dwarf is dead)
+
+				[END]
+
+
+---page---
+
+[7]	KILL DWARF
+
+				DWALF
+		Who!
+
+				DWALF
+		Ah..Brothers, help me..
+
+				PLAYER
+		(You killed the dwarf, and the animals are more active now)
+
+				[END]
+
+
+---page---
+
+[8]	DWARFVISIT2
+
+				THE SECOND DWARF
+		Hi young lady! Have you seen my brother? He looks exactly like me!
+
+	Responses: [2], [3], [4]
+
+				PLAYER
+		No. 
+
+				THE SECOND DWARF
+		Oh, sorry to bother you.
+
+				[END]
+
+	Entry [3]:
+
+				PLAYER
+		Yes, he left that way.
+
+				THE SECOND DWARF
+		Thanks! My brother is a money-grubber, he said he will come here and search for someone the queen wants to kill.
+
+				THE SECOND DWARF
+		I told him if the queen can't kill that person, it must be really hard and dangerous. But he still left.
+
+				THE SECOND DWARF
+		I hope he is still alive... Thanks anyway!
+
+				[END]
+
+	Entry [4]:
+
+				PLAYER
+		Yes, and I killed him... and you too!
+
+				DWALF
+		No!
+
+				PLAYER
+		(You killed the second dwarf. Will there be more of them? You are curious.)
+
+				[END]
+
+
+---page---
+
+[9]	DWARF VISIT 3
+
+				THE THIRD DWARF
+		Hi young lady, have you seen my brothers? They look just like me!
+
+	Responses: [2], [3]
+
+				PLAYER
+		Again? 
+
+				THE THIRD DWARF
+		Aha.. I know my brothers are really troubles, running around in this terrible time. If you have seen them, do you mind to leave with me and go find them?
+
+	Responses: [6], [7]
+
+				PLAYER
+		Ok
+
+	Responses: [13], [14]
+
+	Entry [13]: ((Variable["Dwarf1Dead"] == true) or (Variable["Dwarf2Dead"] == true))
+
+				ACTOR
+		(You followed him. He reported you to the queen one night and you got killed by the queen)
+
+				[END]
+
+	Entry [14]:
+
+				ACTOR
+		(You followed him and found his brothers. You will keep house for them, and cook, make beds, wash, sew, and knit, and keep everything clean and orderly. Until one day They are out of money and reported you.)
+
+				[END]
+
+	Entry [7]:
+
+				PLAYER
+		No way, I'm staying here.
+
+	Responses: [10], [11]
+
+				THE THIRD DWARF
+		Ok. I'll find them alone then. Take care child!
+
+				[END]
+
+	Entry [11]: ((Variable["Dwarf2Dead"] == true) and (Variable["Dwarf1Dead"] == true))
+
+				THE THIRD DWARF
+		It's not up to you! I knew you killed my brothers you monster!
+
+				PLAYER
+		(You have no choice but to kill him too. YOU HAVE NO CHOICE.)
+
+				[END]
+
+	Entry [3]: (Variable["Dwarf2Dead"] == true)
+
+				PLAYER
+		Yeah and you will see them soon!
+
+				THE THIRD DWARF
+		No!
+
+				PLAYER
+		(You killed the third dwarf and feel peaceful)
+
+				[END]
+
+
+---page---
+
+[11]	QUEENVISIT1
+
+	Responses: [1], [6]
+
+				QUEEN
+		Apples, apples, buy some apples. They are dilicious!
+
+				QUEEN
+		Young lady, do you want some apples?
+
+	Responses: [3], [4], [8]
+
+				PLAYER
+		No.
+
+				QUEEN
+		Then do you want some combs? Or lace?
+
+				PLAYER
+		Just leave me alone!
+
+				QUEEN
+		Ok ok.. What a irritable child!
+
+				PLAYER
+		(You stayed in the forest until one day got killed by monsters)
+
+				[END]
+
+	Entry [4]:
+
+				PLAYER
+		Let's skip the talk. Queen.
+
+				QUEEN
+		How would you.. Ah!
+
+				PLAYER
+		(You killed the queen and get back to your home)
+
+	Responses: [13], [14]
+
+				PLAYER
+		(You are happy)
+
+				PLAYER
+		(Now you are the Queen of the Country. And the most beautiful woman in the world)
+
+				PLAYER
+		(Until one day, your mirror told you, there is a girl thousand times fairer than you.)
+
+				PLAYER
+		(The End)
+
+				[END]
+
+	Entry [14]: ((Variable["HunterDead"] == true) and (Variable["Dwarf3Dead"] == true))
+
+				PLAYER
+		(You are terrified)
+
+				PLAYER
+		(For every one you killed during this time. Their ghost haunted you every night.)
+
+				PLAYER
+		(You killed more and more people because you think they are revenging for others. You got crazy.)
+
+				[END]
+
+	Entry [8]:
+
+				PLAYER
+		They look good! I'll take some!
+
+				PLAYER
+		(You took an apple and died.)
+
+				[END]
+
+	Entry [6]:
+
+				QUEEN
+		Apples, apples, buy some apples. They are delicious!
+
+				[END]
+
+
+---page---
+
+[12]	KILLED QUEEN
+
+				QUEEN
+		How would you.. Ah!
+
+				PLAYER
+		(You killed the queen and get back to your home)
+
+	Responses: [22], [23]
+
+				PLAYER
+		(You are happy.)
+
+				PLAYER
+		(Now you are the Queen of the Country. And the most beautiful woman in the world)
+
+				PLAYER
+		(Until one day, your mirror told you, there is a girl thousand times fairer than you)
+
+				PLAYER
+		(The End)
+
+				[END]
+
+	Entry [23]:
+
+				PLAYER
+		(You are terrified)
+
+				PLAYER
+		(For every one you killed during this time. Their ghost haunted you every night.)
+
+				PLAYER
+		(You killed more and more people because you think they are revenging for others. You got crazy.)
+
+				QUEEN
+		
+
+				[END]
+
+
+---page---
+
+[13]	KILLEDBYANIMALS
+
+				PLAYER
+		(You are killed by animals.)
+
+				[END]
+
+
+---page---
+
+[14]	KILL DWARF2
+
+				THE SECOND DWARF
+		Who!
+
+				THE SECOND DWARF
+		Ah..Brothers, help me..
+
+				PLAYER
+		(You killed the second dwarf, and the animals are more active now)
+
+				[END]
+
+
+---page---
+
+[15]	KILL DWARF3
+
+				THE THIRD DWARF
+		Who!
+
+				THE THIRD DWARF
+		Ah..Brothers, help me..
+
+				PLAYER
+		(You killed the third dwarf, and the animals are more active now)
+
+				[END]
+
+
+---page---
+

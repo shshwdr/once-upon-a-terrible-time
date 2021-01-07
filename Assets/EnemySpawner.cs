@@ -42,7 +42,7 @@ public class EnemySpawner : MonoBehaviour
         {
             currentLvelupIndex = 2;
         }
-        Debug.Log(Utils.MonsterKilled +" current currentLvelupIndex " + currentLvelupIndex);
+        //Debug.Log(Utils.MonsterKilled +" current currentLvelupIndex " + currentLvelupIndex);
         GameObject enemy = enemyList[Random.Range(0, currentLvelupIndex + 1)];
        
         Instantiate(enemy,newPos,Quaternion.identity);

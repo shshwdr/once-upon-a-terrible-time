@@ -584,7 +584,7 @@ namespace PixelCrushers.DialogueSystem
 
         public static void ShowCursor(bool value)
         {
-            Cursor.visible = value;
+            Cursor.visible = true;
         }
 
         public static void LockCursor(bool value)

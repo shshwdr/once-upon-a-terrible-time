@@ -11,7 +11,7 @@ public class UIAll : MonoBehaviour
     void Start()
     {
         Restart.SetActive(false);
-        print(Restart + " restart");
+        //print(Restart + " restart");
         Utils.gameOverDele += GameOver;
         DontDestroyOnLoad(this.gameObject);
     }

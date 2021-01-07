@@ -1,0 +1,336 @@
+﻿Database
+Name,Version,Author,Description,Emphasis1,Emphasis2,Emphasis3,Emphasis4
+Dialogue Database,,,,#ffffffff ---,#ff0000ff ---,#00ff00ff ---,#0000ffff ---
+Global User Script
+
+Actors
+ID,Portrait,AltPortraits,SpritePortrait,AltSpritePortraits,Name,Pictures,Description,IsPlayer,Display Name
+Number,Special,Special,Special,Special,Text,Files,Text,Boolean,Text
+1,Assets/snowwhite2.png,[],,[],Player,[],,True,Snow White
+2,Assets/hunter2.png,[],,[],Hunter,[],,False,
+3,Assets/dwalf1.png,[],,[],Dwalf,[],,False,
+4,Assets/dwalf3.png,[],,[],The Second Dwarf,[],,False,
+5,Assets/dwalf2.png,[],,[],The Third Dwarf,[],,False,
+6,Assets/queen.png,[],,[],Queen,[],,False,
+Items
+ID
+Number
+Locations
+ID
+Number
+Variables
+ID,Name,Initial Value,Description,InitialValueType
+Number,Text,Boolean,Text,Text
+1,finishHunterVisit1,False,,Boolean
+2,finishHunterVisit2,False,,Boolean
+3,finishDwarfVisit1,False,,Boolean
+4,finishDwarfVisit2,False,,Boolean
+5,finishDwarfVisit3,False,,Boolean
+6,finishQueenVisit1,False,,Boolean
+7,finishHunterVisit3,False,,Boolean
+8,HunterDead,False,,Boolean
+9,Dwarf1Dead,False,,Boolean
+10,Dwarf2Dead,False,,Boolean
+11,finishQueenVisit2,False,,Boolean
+12,finishQueenVisit3,False,,Boolean
+13,Dwarf3Dead,False,,Boolean
+14,QueenDead,False,,Boolean
+Conversations
+ID,Title,Pictures,Description,Actor,Conversant
+Number,Text,Files,Text,Actor,Actor
+1,Game Start,[],,1,2
+2,Hunter Visit 1,[],,1,2
+3,Kill Hunter,[],,1,2
+4,HunterVisit2,[],,1,2
+5,HunterVisit3,[],,1,2
+6,DwarfVisit1,[],,3,1
+7,Kill Dwarf,[],,1,3
+8,DwarfVisit2,[],,1,3
+9,Dwarf Visit 3,[],,1,5
+11,QueenVisit1,[],,1,6
+12,Killed Queen,[],,1,6
+13,KilledByAnimals,[],,1,6
+14,Kill Dwarf2,[],,1,4
+15,Kill Dwarf3,[],,1,5
+DialogueEntries
+entrytag,ConvID,ID,Actor,Conversant,Title,MenuText,DialogueText,IsGroup,FalseConditionAction,ConditionPriority,Conditions,Script,Sequence,Pictures,Description,Parenthetical,Audio Files,Video File,EventGuid,Response Menu Sequence,canvasRect
+Text,Number,Number,Number,Number,Text,Text,Text,Boolean,Special,Special,Text,Text,Text,Files,Text,Text,Files,Text,Text,Text,Text
+Player_1_0,1,0,1,2,START,,,False,Block,Normal,,,,[],,,[],,,,20;30
+Player_1_1,1,1,1,2,New Dialogue Entry,,"Oh, dear huntsman, let me live. \nI will run into the wild woods and never come back.",False,Block,Normal,,,Audio(girl),[],,,[],,,,9.130447;258.2607
+Hunter_1_2,1,2,2,1,New Dialogue Entry,,"Run away, you poor child.",False,Block,Normal,,,Audio(sigh),[],,,[],,,,9.130447;308.2607
+Hunter_1_3,1,3,2,1,New Dialogue Entry,,"Oh wait, take this gun and light.",False,Block,Normal,,,,[],,,[],,,,9.130447;356.6982
+Hunter_1_4,1,4,2,1,New Dialogue Entry,,Or the wild animals will soon devour you.,False,Block,Normal,,,,[],,,[],,,,9.130447;407.197
+Player_1_5,1,5,1,2,,,(The huntsman obeyed the queen and took you into the woods),False,Block,Normal,,,,[],,,[],,,,140.1906;131.9963
+Player_1_6,1,6,1,2,New Dialogue Entry,,Thanks!,False,Block,Normal,,,,[],,,[],,,,9.130447;457.197
+Hunter_1_7,1,7,2,1,New Dialogue Entry,,"I might visit you later child, don't hit me then.",False,Block,Normal,,,,[],,,[],,,,9.130447;507.197
+Player_2_0,2,0,1,2,START,,,False,Block,Normal,,"Variable[""finishHunterVisit1""] = true",None(),[],,,[],,,,20;30
+Hunter_2_1,2,1,2,1,New Dialogue Entry,,"I'm surprised you are still alive, girl!",False,Block,Normal,,,,[],,,[],,,,20;80
+Player_2_2,2,2,1,2,,,"Thank you, your weapon and light helped a lot.",False,Block,Normal,,,,[],,,[],,,,20;130
+Player_2_3,2,3,1,2,,,I'm so scared! Help me! Take me out of this place!,False,Block,Normal,,,Audio(girl),[],,,[],,,,300.2631;123.4211
+Hunter_2_4,2,4,2,1,,,Yeah... About this. I need to take some light back. I'm out of light myself so...,False,Block,Normal,,,Audio(sigh),[],,,[],,,,63.04512;198.7645
+Hunter_2_6,2,6,2,1,,,I can take you to the queen's castle if you want.,False,Block,Normal,,,,[],,,[],,,,477.4059;169.1354
+Player_2_7,2,7,1,2,,,"...Never mind then. By the way, it is not her castle it's my castle!",False,Block,Normal,,,,[],,,[],,,,718.8344;166.2783
+Hunter_2_8,2,8,2,1,,,"Well, I'm looking forward to that. But now I'm taking some light back...",False,Block,Normal,,,,[],,,[],,,,718.8344;214.8497
+Player_2_9,2,9,1,2,New Dialogue Entry,,You can't do this to me!,False,Block,Normal,,,,[],,,[],,,,718.8344;264.8497
+Player_2_10,2,10,1,2,,,Ok... It's your stuff after all,False,Block,Normal,,,,[],,,[],,,,1008.255;274.8865
+Hunter_2_11,2,11,2,1,New Dialogue Entry,,Yes I can. It's my stuff anyway.,False,Block,Normal,,,,[],,,[],,,,718.8344;314.8497
+Hunter_2_12,2,12,2,1,,,Sorry Girl we all have our own life to take care of.,False,Block,Normal,,,Audio(sigh),[],,,[],,8d877076-0a5f-40a1-b335-969bdc064cce,,444.8613;387.7515
+Player_2_13,2,13,1,2,New Dialogue Entry,,What.. No... Ok... It's your stuff after all...,False,Block,Normal,,,Audio(girl),[],,,[],,,,132.0106;281.5232
+Player_3_0,3,0,1,2,START,,,False,,Normal,,,None(),[],,,[],,,,20;30
+Hunter_3_1,3,1,2,1,,,Girl! It's me! Why did you shoot on me...,False,Block,Normal,,,,[],,,[],,,,20;80
+Player_3_2,3,2,1,2,,,! I didn't notice...,False,Block,Normal,,,Audio(girl),[],,,[],,,,20;128.6842
+Player_3_3,3,3,1,2,,,"(You killed a human, and the animals are getting more active now)",False,Block,Normal,,"Variable[""HunterDead""] = true",,[],,,[],,6f4ca666-a09c-40b1-95b1-7f5ca4a91eae,,20;178.6842
+Player_3_4,3,4,1,2,New Dialogue Entry,,"One shall stand, one shall fall.",False,Block,Normal,,,,[],,,[],,,,236.4556;124.9367
+Player_4_0,4,0,1,2,START,,,False,,Normal,,,None(),[],,,[],,,,20;30
+Hunter_4_1,4,1,2,1,New Dialogue Entry,,Still Alive?,False,Block,Normal,,"Variable[""finishHunterVisit2""] = true",,[],,,[],,,,20;80
+Player_4_2,4,2,1,2,New Dialogue Entry,,You tell me!,False,Block,Normal,,,,[],,,[],,,,20;130
+Hunter_4_3,4,3,2,1,,,"I'm glad you are alive, I REALLY AM, but...",False,Block,Normal,,,Audio(sigh),[],,,[],,,,20;180
+Player_4_4,4,4,1,2,New Dialogue Entry,,You want some light back again?,False,Block,Normal,,,,[],,,[],,,,20;230
+Hunter_4_5,4,5,2,1,,,...Yeah. ,False,Block,Normal,,,,[],,,[],,,,20;280
+Player_4_6,4,6,1,2,,,Do you want to kill me now?,False,Block,Normal,,,,[],,,[],,,,244.59;231.6393
+Hunter_4_7,4,7,2,1,,,"Sorry, the world outside is as hard as here. ",False,Block,Normal,,,,[],,,[],,,,20;330
+Hunter_4_8,4,8,2,1,,,The reign under the queen is terrible... Ah I already talked too much,False,Block,Normal,,,,[],,,[],,,,20;380
+Hunter_4_9,4,9,2,1,,,"It's not that simple, child.",False,Block,Normal,,,,[],,,[],,f26142c4-526e-42d0-bed8-bc687e5b9378,,437.2411;531.7241
+Hunter_4_10,4,10,2,1,,,No! (Murmur) Not directly..,False,Block,Normal,,,,[],,,[],,,,244.59;281.6393
+Player_4_11,4,11,1,2,New Dialogue Entry,,You can take me back and I can replace the queen!,False,Block,Normal,,,,[],,,[],,,,47.58624;457.5861
+Player_4_12,4,12,1,2,New Dialogue Entry,,Why did you not fight back the qeeun?,False,Block,Normal,,,,[],,,[],,,,516.5515;417.931
+Hunter_4_13,4,13,2,1,New Dialogue Entry,,"Ha ha, you are so cute.",False,Block,Normal,,,,[],,,[],,,,47.58624;507.5861
+Player_5_0,5,0,1,2,START,,,False,,Normal,,,None(),[],,,[],,,,20;30
+Player_5_1,5,1,1,2,New Dialogue Entry,,You again.,False,Block,Normal,,"Variable[""finishHunterVisit3""] = true",Audio(girl),[],,,[],,,,20;80
+Hunter_5_2,5,2,2,1,,,Yeah... I'm glad...,False,Block,Normal,,,,[],,,[],,,,20;130
+Player_5_3,5,3,1,2,New Dialogue Entry,,Light?,False,Block,Normal,,,,[],,,[],,,,20;180
+Player_5_4,5,4,1,2,New Dialogue Entry,,My Life this time?,False,Block,Normal,,,,[],,,[],,,,225.1955;170.9503
+Hunter_5_5,5,5,2,1,,,Sorry Girl. I have no choice. The queen promise to give me lots of money if I just kill you.,False,Block,Normal,,,Audio(sigh),[],,,[],,,,135.0721;237.4627
+Player_5_6,5,6,1,2,New Dialogue Entry,,(Shoot him),False,Block,Normal,,,,[],,,[],,,,31.94028;281.4925
+Player_5_7,5,7,1,2,,,"Well. I'm not surprised. But still, I want to thank you for what you have given me before.",False,Block,Normal,,,,[],,,[],,,,243.8805;280.4926
+Hunter_5_8,5,8,2,1,,,..Aha...You are a quick learner.,False,Block,Normal,,,Audio(gun);\nAudio(hit);,[],,,[],,,,31.94028;331.4925
+Hunter_5_9,5,9,2,1,New Dialogue Entry,,"The queen will find you again soon and she will try to kill you. Take care, girl.",False,Block,Normal,,,,[],,,[],,,,31.94028;381.4925
+Player_5_10,5,10,1,2,New Dialogue Entry,,(The hunter died.),False,Block,Normal,,,,[],,,[],,,,31.94028;431.4925
+Hunter_5_11,5,11,2,1,,,"After all these things you met, you are still the same girl as I met you at the beginning.",False,Block,Normal,,,,[],,,[],,,,243.8805;331.4926
+Hunter_5_12,5,12,2,1,New Dialogue Entry,,This might be ridiculous. Do you want to run away with me? I will try my best to take care of you.,False,Block,Normal,,,,[],,,[],,,,243.8805;381.4926
+Player_5_13,5,13,1,2,,,Yes. I'm done with this life.,False,Block,Normal,,,,[],,,[],,,,243.8805;431.4926
+Player_5_14,5,14,1,2,,,"No, I'll fight until the last of my day.",False,Block,Normal,,,,[],,,[],,,,445.6046;426.3201
+Player_5_15,5,15,1,2,,,(You left with the hunter. But the whole country is under the queen's reign and suffered. You starve to death soon.),False,Block,Normal,,,,[],,,[],,618e55aa-265b-488a-9d92-aa010a85a6eb,,242.2412;481.4926
+Hunter_5_16,5,16,2,1,,,"That's very brave. You have my blessing. I'll try to leave this place. But take care, the queen will come to kill you soon.",False,Block,Normal,,,,[],,,[],,,,445.6046;476.3201
+Dwalf_6_0,6,0,3,1,START,,,False,Block,Normal,,,None(),[],,,[],,93c16639-9134-452a-bc12-e028601a4b85,,20;30
+Dwalf_6_1,6,1,3,1,New Dialogue Entry,,Who has been shooting all those animals?,False,Block,Normal,,"Variable[""finishDwarfVisit1""] = true",,[],,,[],,,,20;80
+Dwalf_6_2,6,2,3,1,,,Oh good heaven! Oh good heaven! This Child is so beautiful! What's is your name?,False,Block,Normal,,,,[],,,[],,,,20;130
+Player_6_3,6,3,1,3,,,...(What's wrong with this person) My name is Snow-White.,False,Block,Normal,,,,[],,,[],,,,20;180
+Dwalf_6_4,6,4,3,1,,,How did you find your way to this terrible place?,False,Block,Normal,,,,[],,,[],,,,20;230
+Player_6_5,6,5,1,3,,,"Well, the queen tried to kill me, the huntsman had spared my life and this place is dangerous and devious so the queen can not find and kill me.",False,Block,Normal,,,,[],,,[],,,,21.49254;280
+Dwalf_6_6,6,6,3,1,,,Oh I know you! The queen posted a reward to anyone who kills you!,False,Block,Normal,,,,[],,,[],,,,20;330
+Dwalf_6_7,6,7,3,1,,,Oh of cause not! I'll not tell others you are here! You saved my life after all!,False,Block,Normal,,,,[],,,[],,,,114.8275;459.3102
+Player_6_8,6,8,1,3,New Dialogue Entry,,Are you going to report me?,False,Block,Normal,,,,[],,,[],,,,35.51721;397.2414
+Player_6_9,6,9,1,3,,,Trust him and left him to go,False,Block,Normal,,,,[],,,[],,,,26.36607;526.6179
+Player_6_10,6,10,1,3,New Dialogue Entry,,Don't trust him and kill him,False,Block,Normal,,,,[],,,[],,,,299.4427;524.6949
+Dwalf_6_11,6,11,3,1,,,"Goodbye Snow White! Be careful with anyone close to you, they might report you... The queen promised A TON of money!",False,Block,Normal,,,,[],,,[],,,,26.36607;576.6179
+Dwalf_6_12,6,12,3,1,New Dialogue Entry,,No! Please! Ah!,False,Block,Normal,,,Audio(gun);\nAudio(hit);,[],,,[],,,,299.4427;574.6949
+Player_6_13,6,13,1,3,New Dialogue Entry,,(The dwarf is dead),False,Block,Normal,,,,[],,,[],,,,299.4427;624.6949
+Player_7_0,7,0,1,3,START,,,False,Block,Normal,,,None(),[],,,[],,,,20;31
+Dwalf_7_1,7,1,3,1,,,Who!,False,Block,Normal,,,,[],,,[],,,,20;80
+Dwalf_7_2,7,2,3,1,New Dialogue Entry,,"Ah..Brothers, help me..",False,Block,Normal,,,,[],,,[],,,,20;130
+Player_7_3,7,3,1,3,New Dialogue Entry,,"(You killed the dwarf, and the animals are more active now)",False,Block,Normal,,"Variable[""Dwarf1Dead""] = true",,[],,,[],,b5b8779b-a8ec-4230-9f4c-c7af17824375,,20;180
+Player_8_0,8,0,1,3,START,,,False,Block,Normal,,,None(),[],,,[],,1be49013-4287-43bb-8617-346cb837f28c,,20;30
+The_Second_Dwarf_8_1,8,1,4,1,,,Hi young lady! Have you seen my brother? He looks exactly like me!,False,Block,Normal,,"Variable[""finishDwarfVisit2""] = true",,[],,,[],,,,20;80
+Player_8_2,8,2,1,3,,,No. ,False,Block,Normal,,,,[],,,[],,,,20;130
+Player_8_3,8,3,1,3,New Dialogue Entry,,"Yes, he left that way.",False,Block,Normal,,,,[],,,[],,,,224;128
+Player_8_4,8,4,1,3,,,"Yes, and I killed him... and you too!",False,Block,Normal,,,,[],,,[],,,,419;124
+The_Second_Dwarf_8_5,8,5,4,1,New Dialogue Entry,,"Oh, sorry to bother you.",False,Block,Normal,,,,[],,,[],,,,20;180
+The_Second_Dwarf_8_6,8,6,4,1,,,"Thanks! My brother is a money-grubber, he said he will come here and search for someone the queen wants to kill.",False,Block,Normal,,,,[],,,[],,,,224;178
+The_Second_Dwarf_8_7,8,7,4,1,,,"I told him if the queen can't kill that person, it must be really hard and dangerous. But he still left.",False,Block,Normal,,,,[],,,[],,,,224;228
+The_Second_Dwarf_8_8,8,8,4,1,,,I hope he is still alive... Thanks anyway!,False,Block,Normal,,,,[],,,[],,,,224;278
+Dwalf_8_9,8,9,3,1,New Dialogue Entry,,No!,False,Block,Normal,,,Audio(gun);\nAudio(hit);,[],,,[],,,,419;174
+Player_8_10,8,10,1,3,New Dialogue Entry,,(You killed the second dwarf. Will there be more of them? You are curious.),False,Block,Normal,,"Variable[""Dwarf2Dead""] = true",,[],,,[],,,,419;224
+Player_9_0,9,0,1,5,START,,,False,Block,Normal,,,None(),[],,,[],,868f3f94-f7a3-43c2-8826-d9e50584f917,,20;30
+The_Third_Dwarf_9_1,9,1,5,1,,,"Hi young lady, have you seen my brothers? They look just like me!",False,Block,Normal,,"Variable[""finishDwarfVisit3""] = true",,[],,,[],,,,26;98
+Player_9_2,9,2,1,5,New Dialogue Entry,,Again? ,False,Block,Normal,,,,[],,,[],,,,22.01181;168.2532
+Player_9_3,9,3,1,5,New Dialogue Entry,,Yeah and you will see them soon!,False,Block,Normal,"Variable[""Dwarf2Dead""] == true",,,[],,,[],,,,345.3737;129.9178
+The_Third_Dwarf_9_4,9,4,5,1,,,"Aha.. I know my brothers are really troubles, running around in this terrible time. If you have seen them, do you mind to leave with me and go find them?",False,Block,Normal,,,,[],,,[],,,,22.01181;218.2532
+Player_9_6,9,6,1,5,New Dialogue Entry,,Ok,False,Block,Normal,,,,[],,,[],,,,21.7182;291.3997
+Player_9_7,9,7,1,5,,,"No way, I'm staying here.",False,Block,Normal,,,,[],,,[],,,,323.4387;299.7441
+The_Third_Dwarf_9_8,9,8,5,1,New Dialogue Entry,,No!,False,Block,Normal,,,,[],,,[],,,,437.9497;214.9997
+Player_9_9,9,9,1,5,New Dialogue Entry,,(You killed the third dwarf and feel peaceful),False,Block,Normal,,"Variable[""Dwarf3Dead""] = true",Audio(gun);\nAudio(hit);,[],,,[],,,,510.0808;276.4752
+The_Third_Dwarf_9_10,9,10,5,1,New Dialogue Entry,,Ok. I'll find them alone then. Take care child!,False,Block,Normal,,"Variable[""finishDwarfVisit3""] = true",,[],,,[],,,,356.0154;389.4202
+The_Third_Dwarf_9_11,9,11,5,1,New Dialogue Entry,,It's not up to you! I knew you killed my brothers you monster!,False,Block,Normal,"(Variable[""Dwarf2Dead""] == true) and (Variable[""Dwarf1Dead""] == true)",,,[],,,[],,,,565.8764;382.8267
+Player_9_12,9,12,1,5,,,(You have no choice but to kill him too. YOU HAVE NO CHOICE.),False,Block,Normal,,"Variable[""Dwarf3Dead""] = true",Audio(gun);\nAudio(hit);,[],,,[],,,,624.0882;438.5771
+The_Third_Dwarf_9_13,9,13,5,1,New Dialogue Entry,,(You followed him. He reported you to the queen one night and you got killed by the queen),False,Block,Normal,"(Variable[""Dwarf1Dead""] == true) or (Variable[""Dwarf2Dead""] == true)",,,[],,,[],,f05ddd60-5368-4e15-9993-00d13f07fffa,,6.333588;409.5316
+The_Third_Dwarf_9_14,9,14,5,1,,,"(You followed him and found his brothers. You will keep house for them, and cook, make beds, wash, sew, and knit, and keep everything clean and orderly. Until one day They are out of money and reported you.)",False,Block,Normal,,,,[],,,[],,,,184.3556;407.3338
+Player_11_0,11,0,1,6,START,,,False,Block,Normal,,,None(),[],,,[],,7fbcdb89-f742-4055-9110-7967d2a7d72e,,20;30
+Queen_11_1,11,1,6,1,,,"Apples, apples, buy some apples. They are dilicious!",False,Block,Normal,,,,[],,,[],,,,20;80
+Queen_11_2,11,2,6,1,New Dialogue Entry,,"Young lady, do you want some apples?",False,Block,Normal,,,,[],,,[],,,,20;130
+Player_11_3,11,3,1,6,New Dialogue Entry,,No.,False,Block,Normal,,,,[],,,[],,,,20;180
+Player_11_4,11,4,1,6,New Dialogue Entry,,Let's skip the talk. Queen.,False,Block,Normal,,,,[],,,[],,,,461.2272;173.4545
+Queen_11_5,11,5,6,1,New Dialogue Entry,,Then do you want some combs? Or lace?,False,Block,Normal,,,,[],,,[],,,,20;230
+Queen_11_6,11,6,6,1,,,"Apples, apples, buy some apples. They are delicious!",False,Block,Normal,,,,[],,,[],,,,20;80
+Player_11_7,11,7,1,6,,,Just leave me alone!,False,Block,Normal,,,,[],,,[],,,,20;280
+Player_11_8,11,8,1,6,,,They look good! I'll take some!,False,Block,Normal,,,,[],,,[],,,,226.8181;177.7273
+Player_11_9,11,9,1,6,New Dialogue Entry,,(You took an apple and died.),False,Block,Normal,,,,[],,,[],,6cab78f5-3d96-4c90-a3aa-9822cc169d53,,226.8181;227.7273
+Queen_11_10,11,10,6,1,New Dialogue Entry,,Ok ok.. What a irritable child!,False,Block,Normal,,"Variable[""finishQueenVisit1""] = true",,[],,,[],,,,20;330
+Queen_11_11,11,11,6,1,New Dialogue Entry,,How would you.. Ah!,False,Block,Normal,,,,[],,,[],,,,461.2272;223.4545
+Player_11_12,11,12,1,6,New Dialogue Entry,,(You killed the queen and get back to your home),False,Block,Normal,,,Audio(gun);\nAudio(witch);,[],,,[],,,,461.2272;273.4545
+Player_11_13,11,13,1,6,,,(You are happy),False,Block,Normal,,,,[],,,[],,,,457.1177;343.8798
+Player_11_14,11,14,1,6,New Dialogue Entry,,(You are terrified),False,Block,Normal,"(Variable[""HunterDead""] == true) and (Variable[""Dwarf3Dead""] == true)",,,[],,,[],,,,661.677;343.8798
+Player_11_15,11,15,1,6,New Dialogue Entry,,(Now you are the Queen of the Country. And the most beautiful woman in the world),False,Block,Normal,,,,[],,,[],,,,457.1177;393.8798
+Player_11_16,11,16,1,6,,,"(Until one day, your mirror told you, there is a girl thousand times fairer than you.)",False,Block,Normal,,,,[],,,[],,,,457.1177;443.8798
+Player_11_17,11,17,1,6,New Dialogue Entry,,(The End),False,Block,Normal,,,,[],,,[],,32146045-a95e-4c0a-95bb-d22bed83be16,,457.1177;493.8798
+Player_11_18,11,18,1,6,,,(For every one you killed during this time. Their ghost haunted you every night.),False,Block,Normal,,,,[],,,[],,,,661.677;393.8798
+Player_11_19,11,19,1,6,,,(You killed more and more people because you think they are revenging for others. You got crazy.),False,Block,Normal,,,,[],,,[],,96558bdf-e272-4ef4-a07b-e1b58b7bce81,,661.677;443.8798
+Player_11_20,11,20,1,6,,,(You stayed in the forest until one day got killed by monsters),False,Block,Normal,,,,[],,,[],,1cc52381-a288-4a88-9bf8-9b0863c3a975,,20;380
+Player_12_0,12,0,1,6,START,,,False,Block,Normal,,,None(),[],,,[],,,,20;30
+Queen_12_20,12,20,6,1,New Dialogue Entry,,How would you.. Ah!,False,Block,Normal,,,,[],,,[],,,,4.109558;102.2727
+Player_12_21,12,21,1,6,New Dialogue Entry,,(You killed the queen and get back to your home),False,Block,Normal,,,,[],,,[],,,,4.109558;152.2727
+Player_12_22,12,22,1,6,,,(You are happy.),False,Block,Normal,,,,[],,,[],,,,0;0
+Player_12_23,12,23,1,6,New Dialogue Entry,,(You are terrified),False,Block,Normal,,,,[],,,[],,,,204.5593;222.6979
+Player_12_24,12,24,1,6,New Dialogue Entry,,(Now you are the Queen of the Country. And the most beautiful woman in the world),False,Block,Normal,,,,[],,,[],,,,0;0
+Player_12_25,12,25,1,6,,,"(Until one day, your mirror told you, there is a girl thousand times fairer than you)",False,Block,Normal,,,,[],,,[],,,,0;0
+Player_12_26,12,26,1,6,New Dialogue Entry,,(The End),False,Block,Normal,,,,[],,,[],,32146045-a95e-4c0a-95bb-d22bed83be16,,0;0
+Player_12_27,12,27,1,6,,,(For every one you killed during this time. Their ghost haunted you every night.),False,Block,Normal,,,,[],,,[],,,,204.5593;272.6979
+Player_12_28,12,28,1,6,,,(You killed more and more people because you think they are revenging for others. You got crazy.),False,Block,Normal,,,,[],,,[],,9f05c50e-b464-462d-bd40-fabf1a186f31,,204.5593;319.7768
+Queen_12_29,12,29,6,1,New Dialogue Entry,,,False,Block,Normal,,,,[],,,[],,,,204.5593;371.2693
+Player_13_0,13,0,1,6,START,,,False,,Normal,,,None(),[],,,[],,,,20;30
+Player_13_1,13,1,1,6,New Dialogue Entry,,(You are killed by animals.),False,Block,Normal,,,,[],,,[],,9de1e888-5b95-45ef-89f7-c502f3cdafd6,,20;80
+Player_14_0,14,0,1,4,START,,,False,Block,Normal,,,None(),[],,,[],,,,20;30
+The_Second_Dwarf_14_1,14,1,4,1,,,Who!,False,Block,Normal,,,,[],,,[],,,,20;80
+The_Second_Dwarf_14_2,14,2,4,1,New Dialogue Entry,,"Ah..Brothers, help me..",False,Block,Normal,,,,[],,,[],,,,20;130
+Player_14_3,14,3,1,4,,,"(You killed the second dwarf, and the animals are more active now)",False,Block,Normal,,"Variable[""Dwarf2Dead""] = true",,[],,,[],,b5b8779b-a8ec-4230-9f4c-c7af17824375,,20;180
+Player_15_0,15,0,1,5,START,,,False,,Normal,,,None(),[],,,[],,,,20;30
+The_Third_Dwarf_15_1,15,1,5,1,,,Who!,False,Block,Normal,,,,[],,,[],,,,20;80
+The_Third_Dwarf_15_2,15,2,5,1,New Dialogue Entry,,"Ah..Brothers, help me..",False,Block,Normal,,,,[],,,[],,,,20;130
+Player_15_3,15,3,1,5,,,"(You killed the third dwarf, and the animals are more active now)",False,Block,Normal,,"Variable[""Dwarf3Dead""] = true",,[],,,[],,b5b8779b-a8ec-4230-9f4c-c7af17824375,,20;180
+OutgoingLinks
+OriginConvID,OriginID,DestConvID,DestID,ConditionPriority
+Number,Number,Number,Number,Special
+1,0,1,5,Normal
+1,1,1,2,Normal
+1,2,1,3,Normal
+1,3,1,4,Normal
+1,4,1,6,Normal
+1,5,1,1,Normal
+1,6,1,7,Normal
+2,0,2,1,Normal
+2,1,2,2,Normal
+2,1,2,3,Normal
+2,2,2,4,Normal
+2,3,2,6,Normal
+2,4,2,13,Normal
+2,6,2,7,Normal
+2,7,2,8,Normal
+2,8,2,9,Normal
+2,8,2,10,Normal
+2,9,2,11,Normal
+2,10,2,12,Normal
+2,11,2,12,Normal
+2,13,2,12,Normal
+3,0,3,1,Normal
+3,1,3,2,Normal
+3,1,3,4,Normal
+3,2,3,3,Normal
+3,4,3,3,Normal
+4,0,4,1,Normal
+4,1,4,2,Normal
+4,2,4,3,Normal
+4,3,4,4,Normal
+4,3,4,6,Normal
+4,4,4,5,Normal
+4,5,4,7,Normal
+4,6,4,10,Normal
+4,7,4,8,Normal
+4,8,4,11,Normal
+4,8,4,12,Normal
+4,10,4,7,Normal
+4,11,4,13,Normal
+4,12,4,9,Normal
+4,13,4,9,Normal
+5,0,5,1,Normal
+5,1,5,2,Normal
+5,2,5,3,Normal
+5,2,5,4,Normal
+5,3,5,5,Normal
+5,4,5,5,Normal
+5,5,5,6,Normal
+5,5,5,7,Normal
+5,6,5,8,Normal
+5,7,5,11,Normal
+5,8,5,9,Normal
+5,9,5,10,Normal
+5,11,5,12,Normal
+5,12,5,13,Normal
+5,12,5,14,Normal
+5,13,5,15,Normal
+5,14,5,16,Normal
+6,0,6,1,Normal
+6,1,6,2,Normal
+6,2,6,3,Normal
+6,3,6,4,Normal
+6,4,6,5,Normal
+6,5,6,6,Normal
+6,6,6,8,Normal
+6,7,6,9,Normal
+6,7,6,10,Normal
+6,8,6,7,Normal
+6,9,6,11,Normal
+6,10,6,12,Normal
+6,12,6,13,Normal
+7,0,7,1,Normal
+7,1,7,2,Normal
+7,2,7,3,Normal
+8,0,8,1,Normal
+8,1,8,2,Normal
+8,1,8,3,Normal
+8,1,8,4,Normal
+8,2,8,5,Normal
+8,3,8,6,Normal
+8,4,8,9,Normal
+8,6,8,7,Normal
+8,7,8,8,Normal
+8,9,8,10,Normal
+9,0,9,1,Normal
+9,1,9,2,Normal
+9,1,9,3,Normal
+9,2,9,4,Normal
+9,3,9,8,Normal
+9,4,9,6,Normal
+9,4,9,7,Normal
+9,6,9,13,Normal
+9,6,9,14,Normal
+9,7,9,10,Normal
+9,7,9,11,Normal
+9,8,9,9,Normal
+9,11,9,12,Normal
+11,0,11,1,Normal
+11,0,11,6,Normal
+11,1,11,2,Normal
+11,2,11,3,Normal
+11,2,11,4,Normal
+11,2,11,8,Normal
+11,3,11,5,Normal
+11,4,11,11,Normal
+11,5,11,7,Normal
+11,7,11,10,Normal
+11,8,11,9,Normal
+11,10,11,20,Normal
+11,11,11,12,Normal
+11,12,11,13,Normal
+11,12,11,14,Normal
+11,13,11,15,Normal
+11,14,11,18,Normal
+11,15,11,16,Normal
+11,16,11,17,Normal
+11,18,11,19,Normal
+12,0,12,20,Normal
+12,20,12,21,Normal
+12,21,12,22,Normal
+12,21,12,23,Normal
+12,22,12,24,Normal
+12,23,12,27,Normal
+12,24,12,25,Normal
+12,25,12,26,Normal
+12,27,12,28,Normal
+12,28,12,29,Normal
+13,0,13,1,Normal
+14,0,14,1,Normal
+14,1,14,2,Normal
+14,2,14,3,Normal
+15,0,15,1,Normal
+15,1,15,2,Normal
+15,2,15,3,Normal
